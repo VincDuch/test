@@ -1,32 +1,10 @@
+let number = 0
+input.onButtonPressed(Button.A, function () {
+    number += 1
+})
+input.onButtonPressed(Button.B, function () {
+    number += -1
+})
 basic.forever(function () {
-    basic.showLeds(`
-        . . . . .
-        . # . # .
-        . . . . .
-        # . . . #
-        . # # # .
-        `)
-    basic.showLeds(`
-        . . . . .
-        . # . # .
-        . . . . .
-        . # # # .
-        # . . . #
-        `)
-    basic.showLeds(`
-        . . . . .
-        . # . # .
-        . . . . .
-        . # # # .
-        # . . . #
-        `)
-    basic.showLeds(`
-        . . . . .
-        . # . # .
-        # # # # #
-        . # # # .
-        . . # . .
-        `)
-    basic.showNumber(8)
-    
+    basic.showNumber(number)
 })
